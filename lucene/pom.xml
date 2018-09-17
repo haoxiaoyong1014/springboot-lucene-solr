@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.haoxy.lucene.solr</groupId>
     <artifactId>lucene-solr</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>v1.1.0</version>
 
     <dependencies>
         <dependency>

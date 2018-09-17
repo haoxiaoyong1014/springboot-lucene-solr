@@ -4,8 +4,8 @@ import org.apache.commons.io.FileUtils;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.*;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.*;
+import org.apache.lucene.search.*;
 import org.apache.lucene.store.*;
 import org.apache.lucene.util.Version;
 import org.springframework.stereotype.Controller;
@@ -22,6 +22,7 @@ import java.io.IOException;
 //创建索引
 public class LuceneFirst {
     /**
+     *   创建索引
      * 1, 指定索引库的存放位置,可以是内存也可以是磁盘, 存放在内存一般不用
      * 2, 创建一个 indexWriter 对象 需要一个分析器对象
      * 3, 获取原始文档 需要 IO流 读取文本文件
@@ -35,7 +36,7 @@ public class LuceneFirst {
         // 1, 指定索引库的存放位置,可以是内存也可以是磁盘, 存放在内存一般不用
         //Directory directory=new RAMDirectory();
         //保存在磁盘中
-        Directory directory = FSDirectory.open(new File("tmp/index"));
+        Directory directory = FSDirectory.open(new File("/tmp/index"));
         //2, 创建一个 indexWriter 对象 需要一个分析器对象
         Analyzer analyzer = new StandardAnalyzer();
         //参数1:lucene版本号,参数2:分析器对象
@@ -74,7 +75,49 @@ public class LuceneFirst {
     }
 
     public static void main(String[] args) throws IOException {
-        LuceneFirst.creatIndex();
+        //LuceneFirst.creatIndex();
+        LuceneFirst.searchIndex();
+    }
+
+    /**
+     * 查询索引
+     * 1, 指定索引库存储的位置
+     * 2,使用IndexReade 对象打开索引库
+     * 3,创建一个IndexSearcher 对象 ,构造方法中需要 IndexReade 参数
+     * 4, 创建一个查询对象,需要指定查询域和查询条件
+     * 5,取出查询结果
+     * 6 遍历查询结果并打印.
+     * 7 关闭 IndexReade
+     */
+    public static void searchIndex() throws IOException {
+
+        //1, 指定索引库存储的位置
+        Directory directory = FSDirectory.open(new File("/tmp/index/"));
+        //2,使用IndexReade 对象打开索引库
+        IndexReader indexReader= DirectoryReader.open(directory);
+        //3,创建一个IndexSearcher 对象 ,构造方法中需要 IndexReade 参数
+        IndexSearcher indexSearcher=new IndexSearcher(indexReader);
+        //4, 创建一个查询对象,需要指定查询域和查询条件
+        //term的参数1：要搜索的域 参数2：搜索的关键字
+        Query query=new TermQuery(new Term("name","apache"));
+        //参数1：查询条件 参数2：查询结果返回的最大值
+        // 5,取出查询结果
+        TopDocs topDocs=indexSearcher.search(query,10);
+        //取查询结果总记录数
+        System.out.println("查询结果总记录数："  + topDocs.totalHits);
+        //6遍历查询结果并打印.
+        for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
+            //取文档 id
+            int doc = scoreDoc.doc;
+            //从索引库去文档对象
+            Document document = indexSearcher.doc(doc);
+            System.out.println("文件名: "+document.get("name"));
+            System.out.println("文件内容: "+document.get("content"));//因为没有存(Field.Store.NO),所以查询不出来
+            System.out.println("文件大小: "+document.get("size"));
+            System.out.println("文件路径: "+document.get("path"));
+        }
+        //关闭 IndexReade
+        indexReader.close();
     }
 
 }
