@@ -58,5 +58,7 @@
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-core:4.10.4" level="project" />
     <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-common:4.10.4" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.lucene:lucene-analyzers-smartcn:4.10.4" level="project" />
+    <orderEntry type="library" name="Maven: com.haoxy.ik:IK:2012FF" level="project" />
   </component>
 </module>

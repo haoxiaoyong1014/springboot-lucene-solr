@@ -2,7 +2,12 @@ package com.haoxy.lucene.creatIndex;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.cjk.CJKAnalyzer;
+import org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+import org.apache.lucene.analysis.tokenattributes.OffsetAttribute;
 import org.apache.lucene.document.*;
 import org.apache.lucene.index.*;
 import org.apache.lucene.search.*;
@@ -10,6 +15,7 @@ import org.apache.lucene.store.*;
 import org.apache.lucene.util.Version;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.wltea.analyzer.lucene.IKAnalyzer;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,7 +28,7 @@ import java.io.IOException;
 //创建索引
 public class LuceneFirst {
     /**
-     *   创建索引
+     * 创建索引
      * 1, 指定索引库的存放位置,可以是内存也可以是磁盘, 存放在内存一般不用
      * 2, 创建一个 indexWriter 对象 需要一个分析器对象
      * 3, 获取原始文档 需要 IO流 读取文本文件
@@ -76,7 +82,8 @@ public class LuceneFirst {
 
     public static void main(String[] args) throws IOException {
         //LuceneFirst.creatIndex();
-        LuceneFirst.searchIndex();
+        //LuceneFirst.searchIndex();
+        LuceneFirst.testAnanlyzer();
     }
 
     /**
@@ -94,30 +101,64 @@ public class LuceneFirst {
         //1, 指定索引库存储的位置
         Directory directory = FSDirectory.open(new File("/tmp/index/"));
         //2,使用IndexReade 对象打开索引库
-        IndexReader indexReader= DirectoryReader.open(directory);
+        IndexReader indexReader = DirectoryReader.open(directory);
         //3,创建一个IndexSearcher 对象 ,构造方法中需要 IndexReade 参数
-        IndexSearcher indexSearcher=new IndexSearcher(indexReader);
+        IndexSearcher indexSearcher = new IndexSearcher(indexReader);
         //4, 创建一个查询对象,需要指定查询域和查询条件
         //term的参数1：要搜索的域 参数2：搜索的关键字
-        Query query=new TermQuery(new Term("name","apache"));
+        Query query = new TermQuery(new Term("name", "apache"));
         //参数1：查询条件 参数2：查询结果返回的最大值
         // 5,取出查询结果
-        TopDocs topDocs=indexSearcher.search(query,10);
+        TopDocs topDocs = indexSearcher.search(query, 10);
         //取查询结果总记录数
-        System.out.println("查询结果总记录数："  + topDocs.totalHits);
+        System.out.println("查询结果总记录数：" + topDocs.totalHits);
         //6遍历查询结果并打印.
         for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
             //取文档 id
             int doc = scoreDoc.doc;
             //从索引库去文档对象
             Document document = indexSearcher.doc(doc);
-            System.out.println("文件名: "+document.get("name"));
-            System.out.println("文件内容: "+document.get("content"));//因为没有存(Field.Store.NO),所以查询不出来
-            System.out.println("文件大小: "+document.get("size"));
-            System.out.println("文件路径: "+document.get("path"));
+            System.out.println("文件名: " + document.get("name"));
+            System.out.println("文件内容: " + document.get("content"));//因为没有存(Field.Store.NO),所以查询不出来
+            System.out.println("文件大小: " + document.get("size"));
+            System.out.println("文件路径: " + document.get("path"));
         }
         //关闭 IndexReade
         indexReader.close();
+    }
+
+
+    /**
+     * 查看分析器的分词效果
+     * 1, 创建一个分析器对象
+     * 2, 从分析器中获的 tokenStream对象
+     * 3, 设置一个引用，引用可以有多重类型，可以是关键词的引用、偏移量的引用
+     * 4, 调用tokenStream的reset方法
+     * 5,使用while循环变量单词列表
+     */
+    public static void testAnanlyzer() throws IOException {
+        //1, 创建一个分析器对象
+        //Analyzer analyzer = new StandardAnalyzer();
+        //Analyzer analyzer = new CJKAnalyzer();
+		//Analyzer analyzer = new SmartChineseAnalyzer(); //智能中文分词器
+        Analyzer analyzer = new IKAnalyzer();
+        //2,从分析器中获的 tokenStream对象
+        //参数1：域的名称，可以为null或者""
+        //参数2：要分析的文本内容
+        TokenStream tokenStream = analyzer.tokenStream("", "数据库中存储的数据是高富帅结构化数据，即行数据java，可以用二维表结构来逻辑表达实现的数据。郝小永");
+        //3, 设置一个引用，引用可以有多重类型，可以是关键词的引用、偏移量的引用
+        CharTermAttribute charTermAttribute=tokenStream.addAttribute(CharTermAttribute.class);
+        //偏移量
+        OffsetAttribute offsetAttribute=tokenStream.addAttribute(OffsetAttribute.class);
+        //4, 调用tokenStream的reset方法
+        tokenStream.reset();
+        while (tokenStream.incrementToken()){
+            System.out.println("start->"+offsetAttribute.startOffset());
+            //打印单词
+            System.out.println(charTermAttribute);
+            System.out.println("end->"+ offsetAttribute.endOffset());
+        }
+           tokenStream.close();
     }
 
 }

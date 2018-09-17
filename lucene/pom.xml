@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.haoxy.lucene.solr</groupId>
     <artifactId>lucene-solr</artifactId>
-    <version>v1.1.0</version>
+    <version>v1.3.0</version>
 
     <dependencies>
         <dependency>
@@ -35,5 +35,43 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.lucene/lucene-analyzers-smartcn -->
+        <!--智能中文分词器-->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-analyzers-smartcn</artifactId>
+            <version>4.10.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.haoxy.ik</groupId>
+            <artifactId>IK</artifactId>
+            <version>2012FF</version>
+        </dependency>
     </dependencies>
+    <repositories>
+        <repository>
+            <id>nexus</id>
+            <name>Nexus Repository</name>
+            <url>http://118.190.40.58:8081/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>nexus</id>
+            <name>Nexus Plugin Repository</name>
+            <url>http://118.190.40.58:8081/repository/maven-public/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
