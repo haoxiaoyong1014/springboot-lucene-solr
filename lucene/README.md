@@ -4,7 +4,7 @@
 
 实现一个文件的搜索功能，通过关键字搜索文件，凡是文件名或文件内容包括关键字的文件都需要找出来。还可以根据中文词语进行查询，并且需要支持多个条件查询。
 本案例中的原始内容就是磁盘上的文件，如下图：
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l1.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l1.jpg)
 
 #### 需求分析
 
@@ -41,9 +41,9 @@
 
 **索引和搜索流程图**
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l2.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l2.jpg)
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l3.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l3.jpg)
 
 1、绿色表示索引过程，对要搜索的原始内容进行索引构建一个索引库，索引过程包括：
 确定原始内容即要搜索的内容采集文档创建文档分析文档索引文档
@@ -61,7 +61,7 @@
 原始文档是指要索引和搜索的内容。原始内容包括互联网上的网页、数据库中的数据、磁盘上的文件等。 
 本案例中的原始内容就是磁盘上的文件，如下图：
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l1.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l1.jpg)
 
 从互联网上、数据库、文件系统中等获取需要搜索的原始信息，这个过程就是信息采集，信息采集的目的是为了对原始内容进行索引。
 在Internet上采集信息的软件通常称为爬虫或蜘蛛，也称为网络机器人，爬虫访问互联网上的每一个网页，将获取到的网页内容存储起来。
@@ -77,7 +77,7 @@
 获取原始内容的目的是为了索引，在索引前需要将原始内容创建成文档（Document），文档中包括一个一个的域（Field），域中存储内容。
 这里我们可以将磁盘上的一个文件当成一个document，Document中包括一些Field（file_name文件名称、file_path文件路径、file_size文件大小、file_content文件内容），如下图：
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l4.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l4.jpg)
 
 **注意：每个Document可以有多个Field，不同的Document可以有不同的Field，同一个Document可以有相同的Field（域名和域值都相同）**
 
@@ -105,14 +105,14 @@ to add search capabilities to applications.
 
 对所有文档分析得出的语汇单元进行索引，索引的目的是为了搜索，最终要实现只搜索被索引的语汇单元从而找到Document（文档）。
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l5.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l5.jpg)
 
 注意：创建索引是对语汇单元索引，通过词语找文档，这种索引的结构叫倒排索引结构。
 传统方法是根据文件找到该文件的内容，在文件内容中匹配搜索关键字，这种方法是顺序扫描方法，数据量大、搜索慢。
 
 **倒排索引结构是根据内容（词语）找文档，如下图**： 
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l6.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l6.jpg)
 
 倒排索引结构也叫反向索引结构，包括索引和文档两部分，索引即词汇表，它的规模较小，而文档集合较大。
 很多个文档中都包含Lucene,就形成一个链表,每个链表记录是文档的id,可以通过文档的id查找到相对应的内容
@@ -131,7 +131,7 @@ to add search capabilities to applications.
 
 比如：
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l7.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l7.jpg)
 
 Lucene不提供制作用户搜索界面的功能，需要根据自己的需求开发搜索界面。
 #### 创建查询
@@ -150,13 +150,13 @@ Lucene不提供制作用户搜索界面的功能，需要根据自己的需求�
 比如搜索语法为“fileName:lucene”表示搜索出fileName域中包含Lucene的文档。
 搜索过程就是在索引上查找域为fileName，并且关键字为Lucene的term，并根据term找到文档id列表。
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l6.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l6.jpg)
 
 #### 渲染结果
 
 以一个友好的界面将查询结果展示给用户，用户根据搜索结果找自己想要的信息，为了帮助用户很快找到自己的结果，提供了很多展示的效果，比如搜索结果中将关键字高亮显示，百度提供的快照等。
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l8.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l8.jpg)
 
 #### 配置开发环境
 
@@ -262,7 +262,7 @@ ID	：
 
 是否存储的标准：是否要将内容展示给用户
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l9.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l9.jpg)
 
 ####代码实现
 ```
@@ -330,7 +330,7 @@ public static void creatIndex() throws IOException {
 
 IndexSearcher搜索方法
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l10.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l10.jpg)
 
 #### 代码实现
 ```
@@ -387,7 +387,7 @@ TopDocs.scoreDocs：匹配相关度高的前边记录数组，scoreDocs的长度
 
 如下图是语汇单元的生成过程：
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l11.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l11.jpg)
 
 从一个Reader字符流开始，创建一个基于Reader的Tokenizer分词器，经过三个TokenFilter生成语汇单元Token。
 
@@ -455,7 +455,7 @@ public static void testAnanlyzer() throws IOException {
 第一步：把jar包添加到工程中
 第二步：把配置文件和扩展词典和停用词词典添加到classpath下
 
-![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/images/l12.jpg)
+![image](https://github.com/haoxiaoyong1014/best-pay-demo/raw/master/src/main/java/com/github/lly835/Images/l12.jpg)
 
 IK支持扩展词库（高富帅）和停用词库（瑜伽服 瑜伽 服）
 
