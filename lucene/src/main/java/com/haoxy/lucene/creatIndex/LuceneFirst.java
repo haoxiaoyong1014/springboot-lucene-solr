@@ -141,7 +141,7 @@ public class LuceneFirst {
         //Analyzer analyzer = new StandardAnalyzer();
         //Analyzer analyzer = new CJKAnalyzer();
 		//Analyzer analyzer = new SmartChineseAnalyzer(); //智能中文分词器
-        Analyzer analyzer = new IKAnalyzer();
+        Analyzer analyzer = new IKAnalyzer();//IK分词器
         //2,从分析器中获的 tokenStream对象
         //参数1：域的名称，可以为null或者""
         //参数2：要分析的文本内容
