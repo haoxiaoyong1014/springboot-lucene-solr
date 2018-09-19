@@ -310,9 +310,9 @@ public static void creatIndex() throws IOException {
     }
 ```
 
-####功能二：查询索引
+#### 功能二：查询索引
 
-#####实现步骤
+##### 实现步骤
 
 第一步：创建一个Directory对象，也就是索引库存放的位置。
 
@@ -425,7 +425,7 @@ public static void testAnanlyzer() throws IOException {
 
 #### 中文分析器
 
-#####Lucene自带中文分词器
+##### Lucene自带中文分词器
 
 **StandardAnalyzer：**
 
