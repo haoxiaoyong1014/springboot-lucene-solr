@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0f9e004-15e3-4d43-a984-50cf54e90198" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lucene/README2.md" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/lucene/lucene.iml" afterPath="$PROJECT_DIR$/lucene/lucene.iml" />
-      <change beforePath="$PROJECT_DIR$/lucene/pom.xml" afterPath="$PROJECT_DIR$/lucene/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/LuceneFirst.java" afterPath="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/LuceneFirst.java" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java" afterPath="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java" />
     </list>
     <ignored path="$PROJECT_DIR$/lucene/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,13 +27,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexSearcherLucene.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IndexSearcherLucene.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret line="121" column="71" lean-forward="false" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="71" />
+            <state relative-caret-position="538">
+              <caret line="151" column="28" lean-forward="true" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MultiFieldQueryParser.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.jar!/org/apache/lucene/queryparser/classic/MultiFieldQueryParser.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+              <folding>
+                <marker date="1538012477000" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1538012477000" expanded="false" signature="161:589" ph="..." />
+                <marker date="1538012477000" expanded="true" signature="817:880" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="886:904" ph="/**...*/" />
+                <marker date="1538012477000" expanded="true" signature="1039:1122" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="1192:1203" ph=" { " />
+                <marker date="1538012477000" expanded="true" signature="1242:1248" ph=" }" />
+                <marker date="1538012477000" expanded="true" signature="1254:1272" ph="/**...*/" />
+                <marker date="1538012477000" expanded="true" signature="1380:1470" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="1570:2566" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="2614:2817" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="2923:3841" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="3950:4395" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="4484:4901" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="4992:5413" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="5559:6044" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="6133:6550" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="6658:6730" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="6736:6754" ph="/**...*/" />
+                <marker date="1538012477000" expanded="true" signature="6899:7525" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="7644:7721" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="7727:7745" ph="/**...*/" />
+                <marker date="1538012477000" expanded="true" signature="7901:8514" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="8637:8716" ph="{...}" />
+                <marker date="1538012477000" expanded="true" signature="8722:8740" ph="/**...*/" />
+                <marker date="1538012477000" expanded="true" signature="8900:9584" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -71,16 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file:///private/var/folders/wz/y968r7ks6s9041358pb9k5j80000gn/T/fz3temp-2/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ext.dic" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lucene/src/main/resources/ext.dic">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,24 +117,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Git Clone/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2627">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lucene/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="-4611">
+                <caret line="266" column="5" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexManageer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexManageer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="125">
+                <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README2.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lucene/README2.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1010">
+                <caret line="238" column="0" lean-forward="true" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -126,22 +169,9 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lucene/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="985">
+              <caret line="59" column="21" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="59" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lucene/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="6650">
-                <caret line="266" column="5" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-                <folding />
-              </first_editor>
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -175,7 +205,9 @@
         <option value="$PROJECT_DIR$/lucene/README.md" />
         <option value="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/LuceneFirst.java" />
         <option value="$PROJECT_DIR$/lucene/pom.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java" />
+        <option value="$PROJECT_DIR$/lucene/README2.md" />
       </list>
     </option>
   </component>
@@ -326,8 +358,7 @@
               <item name="springboot-lucene-solr" type="462c0819:PsiDirectoryNode" />
               <item name="lucene" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,15 +378,15 @@
     <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lucene/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/lucene" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lucene/src/main/resources" />
       <recent name="$PROJECT_DIR$/lucene/src/main/java" />
       <recent name="$PROJECT_DIR$/lucene" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lucene" />
+      <recent name="$PROJECT_DIR$/lucene/src/main/resources" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -370,7 +401,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.IndexSearcherLucene.testBooleanQuery">
+  <component name="RunManager" selected="JUnit.IndexSearcherLucene.testTermQuery">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -385,25 +416,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.haoxy.lucene.creatIndex.IndexSearcherLucene" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lucene" />
-      <envs />
-    </configuration>
-    <configuration name="LuceneFirst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.haoxy.lucene.creatIndex.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.haoxy.lucene.creatIndex.LuceneFirst" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -454,6 +466,31 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="IndexSearcherLucene.testMulitFieldQueryParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.haoxy.lucene.creatIndex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lucene" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.haoxy.lucene.creatIndex" />
+      <option name="MAIN_CLASS_NAME" value="com.haoxy.lucene.creatIndex.IndexSearcherLucene" />
+      <option name="METHOD_NAME" value="testMulitFieldQueryParser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="IndexSearcherLucene.testQueryParser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -467,6 +504,31 @@
       <option name="PACKAGE_NAME" value="com.haoxy.lucene.creatIndex" />
       <option name="MAIN_CLASS_NAME" value="com.haoxy.lucene.creatIndex.IndexSearcherLucene" />
       <option name="METHOD_NAME" value="testQueryParser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="IndexSearcherLucene.testTermQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.haoxy.lucene.creatIndex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="lucene" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.haoxy.lucene.creatIndex" />
+      <option name="MAIN_CLASS_NAME" value="com.haoxy.lucene.creatIndex.IndexSearcherLucene" />
+      <option name="METHOD_NAME" value="testTermQuery" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -539,18 +601,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.LuceneFirst" />
-      <item index="1" class="java.lang.String" itemvalue="Application.IndexSearcherLucene" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testBooleanQuery" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testQueryParser" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.IndexSearcherLucene" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testBooleanQuery" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testQueryParser" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testMulitFieldQueryParser" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testTermQuery" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testBooleanQuery" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testQueryParser" />
-        <item index="2" class="java.lang.String" itemvalue="Application.IndexSearcherLucene" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LuceneFirst" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testTermQuery" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testMulitFieldQueryParser" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testBooleanQuery" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.IndexSearcherLucene.testQueryParser" />
+        <item index="4" class="java.lang.String" itemvalue="Application.IndexSearcherLucene" />
       </list>
     </recent_temporary>
   </component>
@@ -571,7 +635,7 @@
       <workItem from="1537835528596" duration="556000" />
       <workItem from="1537837161107" duration="767000" />
       <workItem from="1537868072505" duration="240000" />
-      <workItem from="1537876464660" duration="7702000" />
+      <workItem from="1537876464660" duration="11702000" />
     </task>
     <servers />
   </component>
@@ -582,12 +646,18 @@
     <history-entry file="IndexSearcherLucene_testBooleanQuery - 2018.09.27 at 10h 41m 49s.xml">
       <configuration name="IndexSearcherLucene.testBooleanQuery" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IndexSearcherLucene_testMulitFieldQueryParser - 2018.09.27 at 14h 03m 27s.xml">
+      <configuration name="IndexSearcherLucene.testMulitFieldQueryParser" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="IndexSearcherLucene_testQueryParser - 2018.09.27 at 10h 38m 52s.xml">
       <configuration name="IndexSearcherLucene.testQueryParser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IndexSearcherLucene_testTermQuery - 2018.09.27 at 14h 31m 51s.xml">
+      <configuration name="IndexSearcherLucene.testTermQuery" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35564000" />
+    <option name="totallyTimeSpent" value="39564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -611,9 +681,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25334322" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15527488" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34546804" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17756315" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16866028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -638,68 +708,12 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/LuceneFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="123" column="58" lean-forward="false" selection-start-line="123" selection-start-column="58" selection-end-line="123" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.jar!/org/apache/lucene/search/TermQuery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="29" column="11" lean-forward="false" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding>
-            <marker date="1537154987000" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1537154987000" expanded="false" signature="148:859" ph="..." />
-            <marker date="1537154987000" expanded="true" signature="1039:1050" ph=" { " />
-            <marker date="1537154987000" expanded="true" signature="1062:1068" ph=" }" />
-            <marker date="1537154987000" expanded="true" signature="1112:1214" ph="{...}" />
-            <marker date="1537154987000" expanded="true" signature="1265:1410" ph="{...}" />
-            <marker date="1537154987000" expanded="false" signature="1437:1448" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="1465:1471" ph=" }" />
-            <marker date="1537154987000" expanded="true" signature="1547:2051" ph="{...}" />
-            <marker date="1537154987000" expanded="false" signature="2098:2109" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="2135:2141" ph=" }" />
-            <marker date="1537154987000" expanded="true" signature="2184:2516" ph="{...}" />
-            <marker date="1537154987000" expanded="true" signature="2554:2787" ph="{...}" />
-            <marker date="1537154987000" expanded="false" signature="2814:2825" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="2893:2899" ph=" }" />
-            <marker date="1537154987000" expanded="true" signature="2943:6686" ph="{...}" />
-            <marker date="1537154987000" expanded="true" signature="3169:3574" ph="{...}" />
-            <marker date="1537154987000" expanded="false" signature="3608:3623" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="3663:3673" ph=" }" />
-            <marker date="1537154987000" expanded="false" signature="3706:3721" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="3743:3753" ph=" }" />
-            <marker date="1537154987000" expanded="false" signature="3802:3817" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="3862:3872" ph=" }" />
-            <marker date="1537154987000" expanded="false" signature="3941:3956" ph=" { " />
-            <marker date="1537154987000" expanded="false" signature="4003:4013" ph=" }" />
-            <marker date="1537154987000" expanded="true" signature="4109:4771" ph="{...}" />
-            <marker date="1537154987000" expanded="true" signature="4860:5418" ph="{...}" />
-            <marker date="1537154987000" expanded="true" signature="5511:5568" ph="{...}" />
-            <marker date="1537154987000" expanded="true" signature="5662:6680" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexManageer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -910,17 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lucene/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="6650">
-            <caret line="266" column="5" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///private/var/folders/wz/y968r7ks6s9041358pb9k5j80000gn/T/fz3temp-2/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -942,7 +945,7 @@
         <state relative-caret-position="390">
           <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -976,14 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/LuceneFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="143" column="44" lean-forward="false" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lucene/src/main/resources/stopword.dic">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1000,21 +995,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.jar!/org/apache/lucene/queryparser/classic/MultiFieldQueryParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="34" column="54" lean-forward="false" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+          <folding>
+            <marker date="1538012477000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1538012477000" expanded="false" signature="161:589" ph="..." />
+            <marker date="1538012477000" expanded="true" signature="817:880" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="886:904" ph="/**...*/" />
+            <marker date="1538012477000" expanded="true" signature="1039:1122" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="1192:1203" ph=" { " />
+            <marker date="1538012477000" expanded="true" signature="1242:1248" ph=" }" />
+            <marker date="1538012477000" expanded="true" signature="1254:1272" ph="/**...*/" />
+            <marker date="1538012477000" expanded="true" signature="1380:1470" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="1570:2566" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="2614:2817" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="2923:3841" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="3950:4395" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="4484:4901" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="4992:5413" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="5559:6044" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="6133:6550" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="6658:6730" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="6736:6754" ph="/**...*/" />
+            <marker date="1538012477000" expanded="true" signature="6899:7525" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="7644:7721" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="7727:7745" ph="/**...*/" />
+            <marker date="1538012477000" expanded="true" signature="7901:8514" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="8637:8716" ph="{...}" />
+            <marker date="1538012477000" expanded="true" signature="8722:8740" ph="/**...*/" />
+            <marker date="1538012477000" expanded="true" signature="8900:9584" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lucene/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-4611">
+            <caret line="266" column="5" lean-forward="false" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="125">
+            <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/LuceneFirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="143" column="44" lean-forward="false" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lucene/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state relative-caret-position="985">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="59" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lucene/src/main/java/com/haoxy/lucene/creatIndex/IndexSearcherLucene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="121" column="71" lean-forward="false" selection-start-line="121" selection-start-column="71" selection-end-line="121" selection-end-column="71" />
+        <state relative-caret-position="538">
+          <caret line="151" column="28" lean-forward="true" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lucene/README2.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1010">
+            <caret line="238" column="0" lean-forward="true" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
