@@ -116,7 +116,7 @@ public class LuceneFirst {
         for (ScoreDoc scoreDoc : topDocs.scoreDocs) {
             //取文档 id
             int doc = scoreDoc.doc;
-            //从索引库去文档对象
+            //从索引库取文档对象
             Document document = indexSearcher.doc(doc);
             System.out.println("文件名: " + document.get("name"));
             System.out.println("文件内容: " + document.get("content"));//因为没有存(Field.Store.NO),所以查询不出来
