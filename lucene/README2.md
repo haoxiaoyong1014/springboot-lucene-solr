@@ -232,7 +232,7 @@
 
 * 条件1 NOT 条件2
 
-#### MulitFieldQueryParser
+#### 使用MulitFieldQueryParser查询
 
 * 可以指定多个默认搜索域
 
